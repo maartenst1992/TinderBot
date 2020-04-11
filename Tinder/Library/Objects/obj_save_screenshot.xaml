@@ -5,7 +5,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>390,831</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>390,595</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>obj_save_screenshot_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -74,7 +74,7 @@
     </Assign>
     <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot 'Intermediate D3D Window'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1" Screenshot="[Screenshot]">
       <ui:TakeScreenshot.Target>
-        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3fa10a3ae032ff76daed5692408b38d4" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='(12) Tinder - Google Chrome' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="3fa10a3ae032ff76daed5692408b38d4" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='* Tinder - Google Chrome' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
           <ui:Target.TimeoutMS>
             <InArgument x:TypeArguments="x:Int32" />
           </ui:Target.TimeoutMS>

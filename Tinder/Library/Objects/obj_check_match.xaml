@@ -1,0 +1,81 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="obj_check_match" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="516,705" sap2010:WorkflowViewState.IdRef="obj_check_match_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="obj_check_match" sap:VirtualizedContainerService.HintSize="526,540" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Boolean" Name="b_match" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ImageFound DisplayName="Image Exists 'chrome.exe  (13) Tinder'" Found="[b_match]" sap:VirtualizedContainerService.HintSize="484,106" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+      <ui:ImageFound.Image>
+        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="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" />
+      </ui:ImageFound.Image>
+      <ui:ImageFound.Target>
+        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;html app='chrome.exe' title='* Tinder' /&gt;" TimeoutMS="2000" WaitForReady="COMPLETE" />
+      </ui:ImageFound.Target>
+    </ui:ImageFound>
+    <If Condition="[b_match]" sap:VirtualizedContainerService.HintSize="484,302" sap2010:WorkflowViewState.IdRef="If_1">
+      <If.Then>
+        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'Intermediate D3D Window'" sap:VirtualizedContainerService.HintSize="334,154" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="esc" KeyModifiers="None" SpecialKey="True">
+          <ui:SendHotkey.Target>
+            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="28744ee8355b4c73aabdd8f3a2c5a8ac" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='* Tinder - Google Chrome' /&gt;&lt;wnd cls='Intermediate D3D Window' /&gt;">
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:SendHotkey.Target>
+        </ui:SendHotkey>
+      </If.Then>
+    </If>
+  </Sequence>
+</Activity>
